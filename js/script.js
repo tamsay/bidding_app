@@ -94,5 +94,14 @@ let events=(()=>{
 
         tbody.appendChild(tr);
 
+        clearFields();
     }
 })()
+
+let clearFields=()=>{
+    document.querySelector(selectors().mySelector.numberOfItems).value = '';
+    
+    document.querySelector(selectors().mySelector.biddingAmount).value = '';
+
+    document.querySelector(selectors().mySelector.comment).value = '';
+}

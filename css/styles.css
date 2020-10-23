@@ -186,6 +186,7 @@ h1{
     }
     #summaryThead tr{
         font-weight: bold;
+        text-align: center;
     }
     #summaryThead tr th:first-child{
     }
@@ -199,8 +200,8 @@ h1{
         width: 50%;
     }
     #summaryThead th{
-        padding: 0.25em 0.25em;
-        font-size: 0.75em;
+        padding: 0.25em 0.125em;
+        font-size: 0.825em;
     }
     #summaryTbody tr{
         border-bottom: 1px solid #e4e3d3;
