@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>BIDDING APP</title>
+</head>
+<body>
+    
+    <h1>BIDDING APP</h1>
+
+    <section id="mainSection">
+        <div class="wrapper row">
+            <div class="col-md-6 categoryDiv">
+                <h3>Category</h3>
+                <select name="category" id="category">
+                    <option value="Shoes">Shoes</option>
+                    <option value="Bags">Bags</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Phones">Phones</option>
+                </select>
+            </div>
+            <div class="col-md-6 details">
+                <h3>Details</h3>
+                <input type="number" placeholder="Number of Items" id="numberOfItems">
+                <input type="number" placeholder="Enter bidding amount" id="biddingAmount">
+                <input type="text" placeholder="Leave a comment" id="comment">
+                <small id="errorSpan"></small>
+                <button class="btn-primary" id="payBtn">Pay</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="summarySection">
+        <h2>Summary</h2>
+        <table id="summaryTable">
+            <thead id="summaryThead">
+                <tr>
+                    <th>S/N</th>
+                    <th>Category</th>
+                    <th>Number of Items</th>
+                    <th>Bid Amount</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+
+           <tbody id="summaryTbody">
+            
+           </tbody>
+
+           <tfoot>
+           </tfoot>
+            
+        </table>
+        <div id="bidSummaryItem"></div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
